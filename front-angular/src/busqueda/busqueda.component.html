@@ -1,0 +1,23 @@
+<div class="span-categories box">
+  <span>Electronica, audio y video > iPod > Reproductores</span>
+</div>
+<div class="box" *ngFor="let item of items">
+  <div class="div-item">
+    <div class="box-img">
+      <img class="size" src="{{item.thumbnail}}">
+    </div>
+    <div class="box-description">
+      <div class="box-description-precio">
+        <span> {{item.price | currency}}</span>
+      </div>
+      <div class="box-description-text">
+        <span>{{item.title}}</span>
+      </div>
+    </div>
+    <div class="box-city">
+      <div class="box-description-city">
+        <span>{{item.state_name}}</span>
+      </div>
+    </div>
+  </div>
+</div>

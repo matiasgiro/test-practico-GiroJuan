@@ -1,0 +1,86 @@
+.box {
+  margin-top: 16px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.span-categories {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 16px;
+}
+
+.div-item {
+  height: 5%;
+  padding-top: 16px;
+  background: white;
+  padding-bottom: 16px;
+  width: 100%;
+  float: left;
+  margin-bottom: 5%;
+
+}
+.size {
+  height: 500px;
+  width: 500px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.box-img {
+  width: 70%;
+  min-width: 180px;
+  float: left;
+  border-radius: 4px;
+}
+.box-button {
+  width: 30%;
+  float: left;
+}
+.box-description {
+  width: 20%;
+  float: left;
+  padding-top: 16px;
+  text-align: left;
+
+}
+.box-description-estado{
+  font-size: 14px;
+  padding-bottom: 16px;
+}
+.box-description-precio{
+  font-size: 46px;
+  padding-bottom: 32px;
+}
+.box-description-nombre{
+  font-size: 24px;
+  padding-bottom: 32px;
+  font-weight: bold;
+}
+.box-description-text{
+  font-size: 18px;
+}
+.button{
+  width: 100%;
+  background: #3483fa;
+  border: 0px;
+  border-radius: 4px;
+  color: white;
+  height: 32px;
+}
+.padding-button{
+  padding-right: 32px;
+}
+.description{
+  width: 70%;
+  float: left;
+}
+.description-title{
+  font-size: 28px;
+  padding-left: 32px;
+  padding-bottom: 32px;
+}
+.description-text{
+  font-size: 16px;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  text-align: justify;
+}

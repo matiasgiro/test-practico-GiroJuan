@@ -1,0 +1,58 @@
+.box {
+  margin-top: 16px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.span-categories {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 16px;
+}
+
+.div-item {
+  height: 5%;
+  padding-top: 16px;
+  background: white;
+  padding-bottom: 16px;
+  width: 100%;
+  float: left;
+  border-bottom: 2px solid #eeeeee;
+
+}
+
+.size {
+  height: 180px;
+  width: 180px;
+}
+
+.box-img {
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 15%;
+  min-width: 180px;
+  float: left;
+  border-radius: 4px;
+}
+
+.box-description {
+  width: 70%;
+  float: left;
+  padding-top: 16px;
+
+}
+box-city{
+  width: 15%;
+  float: left;
+}
+.box-description-precio{
+  font-size: 24px;
+  padding-bottom: 32px;
+}
+.box-description-text{
+  font-size: 18px;
+}
+.box-description-city{
+  padding-top: 24px;
+  font-size: 12px;
+}
