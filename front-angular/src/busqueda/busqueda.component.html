@@ -1,8 +1,8 @@
 <div class="span-categories box">
-  <span>Electronica, audio y video > iPod > Reproductores</span>
+  <span>Categoria 1 > Categoria 2 > Categoria 3</span>
 </div>
 <div class="box" *ngFor="let item of items">
-  <div class="div-item">
+  <div class="div-item" (click)="detalle(item.id)">
     <div class="box-img">
       <img class="size" src="{{item.thumbnail}}">
     </div>

@@ -12,9 +12,18 @@ export class ConsultasService {
               private errorHandler: ErrorHandler,) {
 
   }
-  public obtenerConsultas(search:string): Observable<any>  {
-    console.log(search);
+  public obtenerItems(search:string): Observable<any>  {
     return this.http.get<any>('http://localhost:9898/api/items/' + search).pipe(
+      map((res: any) => {
+        return res;
+      }),
+      catchError(e => {
+        return throwError('Lo sentimos intente nuevamente.');
+      })
+    );
+  }
+  public obtenerItem(id:any): Observable<any>  {
+    return this.http.get<any>('http://localhost:9898/api/item/' + id).pipe(
       map((res: any) => {
         return res;
       }),

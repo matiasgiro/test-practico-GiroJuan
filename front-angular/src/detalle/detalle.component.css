@@ -20,8 +20,8 @@
 
 }
 .size {
-  height: 500px;
-  width: 500px;
+  height: 480px;
+  width: 640px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -70,6 +70,7 @@
   padding-right: 32px;
 }
 .description{
+  padding-top: 5%;
   width: 70%;
   float: left;
 }

@@ -16,7 +16,8 @@ export class BusquedaComponent implements OnInit {
   constructor(private route: ActivatedRoute,
               private consultaService: ConsultasService,
               private spinner: NgxSpinnerService,
-              private activatedRoute: ActivatedRoute,) { }
+              private activatedRoute: ActivatedRoute,
+              private router: Router) { }
 
   ngOnInit() {
     this.activatedRoute.paramMap.subscribe((params: ParamMap) => {
@@ -24,12 +25,15 @@ export class BusquedaComponent implements OnInit {
       this.consultar();
     });
   }
-  consultar(){
+  consultar() {
     this.spinner.show();
-      this.consultaService.obtenerConsultas(this.search).subscribe(res =>{
+      this.consultaService.obtenerItems(this.search).subscribe(res =>{
         this.spinner.hide();
         this.items = res.items;
       });
+  }
+  detalle(id) {
+    this.router.navigate(['detalle/', id]);
   }
 
 }
