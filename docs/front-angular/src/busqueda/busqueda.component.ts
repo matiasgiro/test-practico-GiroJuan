@@ -11,7 +11,7 @@ import {NgxSpinnerService} from 'ngx-spinner';
 export class BusquedaComponent implements OnInit {
 
   items: any = [];
-  search:string = '';
+  search: string = '';
 
   constructor(private route: ActivatedRoute,
               private consultaService: ConsultasService,

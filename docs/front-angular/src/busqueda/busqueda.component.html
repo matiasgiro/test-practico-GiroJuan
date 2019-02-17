@@ -9,6 +9,7 @@
     <div class="box-description">
       <div class="box-description-precio">
         <span> {{item.price | currency}}</span>
+        <span *ngIf="!item.free_shipping" class="padding-carro"> <img class="carro-compra" src="../assets/ic_shipping.png"></span>
       </div>
       <div class="box-description-text">
         <span>{{item.title}}</span>

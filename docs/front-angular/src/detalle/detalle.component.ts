@@ -18,11 +18,13 @@ export class DetalleComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit() {
-      this.id = this.route.snapshot.paramMap.get('id');
+    this.activatedRoute.paramMap.subscribe((params: ParamMap) => {
+      this.spinner.show();
+      this.id = params.get('id');
       this.consultar();
+    });
   }
   consultar() {
-    this.spinner.show();
     this.consultaService.obtenerItem(this.id).subscribe(res => {
       this.spinner.hide();
       this.detalle = res;
